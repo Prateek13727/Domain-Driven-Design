@@ -2,8 +2,8 @@
 'use strict';
 
 
-function fromString(anyOther) {
-  switch (anyOther) {
+function fromString(param) {
+  switch (param) {
     case "accepted" :
         return /* Accepted */1;
     case "cancelled" :

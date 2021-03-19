@@ -1,4 +1,3 @@
-
 type t =
   | Open
   | Accepted
@@ -13,7 +12,7 @@ let fromString :(string) => t =
   | "live" => Live
   | "completed" => Completed
   | "cancelled" => Cancelled
-  | anyOther => raise(Not_found);
+  | _ => raise(Not_found);
 
 let toString = (status: t): string =>
   switch (status) {
