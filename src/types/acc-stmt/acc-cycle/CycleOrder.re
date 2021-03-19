@@ -4,7 +4,6 @@ type customerInfo = {
   customer_name: string,
 };
 
-
 type tripInfo = {
   trip_started_time: Timestamp.t,
   trip_ended_time: Timestamp.t,
