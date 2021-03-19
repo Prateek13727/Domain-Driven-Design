@@ -12,7 +12,11 @@ let fromString :(string) => t =
   | "live" => Live
   | "completed" => Completed
   | "cancelled" => Cancelled
-  | _ => raise(Not_found);
+  | anyOther => ErrorUtils.raiseError(
+      ~path="OrderStatus.re",
+      ~message="invalid order status",
+      ~value=anyOther
+  );
 
 let toString = (status: t): string =>
   switch (status) {

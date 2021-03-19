@@ -1,3 +1,4 @@
+//aggregate root for the Account Statement Entity
 type t = {
   stmt_id: string,
   acc_cycle: AccountCycle.t,

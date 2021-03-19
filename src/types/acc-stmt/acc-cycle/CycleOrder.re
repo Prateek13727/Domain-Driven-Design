@@ -26,5 +26,5 @@ type t =
 | Open(baseOrder)
 | Accepted(baseOrder)
 | Live(baseOrder)
-| Completed(baseOrder, tripInfo)
+| Completed(baseOrder, tripInfo) //tripInfo is only present when the order status is completed. Hence variants here are helping us avoid representing the states illegally.
 | Cancelled(baseOrder);
