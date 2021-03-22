@@ -11,6 +11,5 @@
         - A Transaction can be of two types: debit Or credit.
         - Every cycle, multiple orders (trips/bookings) can be placed from a business account
 
-    ## Notes
-    - Account Stmt is generated at the end of the Cycle Duration and sent to the customer. The Cycle has a duration of 7 days.
-    - No account statements are sent if there are no cycle orders
+  - Account Stmt is generated at the end of the Cycle Duration and sent to the customer. The Cycle has a duration of 7 days.
+  - No account statements are sent if there are no cycle orders
